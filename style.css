@@ -1,0 +1,129 @@
+/* -------------------------
+    GLOBAL SETTINGS
+-------------------------- */
+
+:root {
+  --bg: #ffffff;
+  --text-main: #111;
+  --text-sub: #555;
+  --accent: #1a73e8;
+  --radius: 16px;
+  --shadow-soft: 0 20px 45px rgba(0,0,0,0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-main);
+  padding: 40px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* -------------------------
+    FLARE EFFECTS
+-------------------------- */
+
+.flare {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.45;
+  z-index: -1;
+}
+
+.flare-1 {
+  background: #78a5ff;
+  top: -80px;
+  left: -120px;
+}
+
+.flare-2 {
+  background: #ffd381;
+  bottom: -120px;
+  right: -140px;
+}
+
+/* -------------------------
+    HERO SECTION
+-------------------------- */
+
+.hero {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  color: var(--text-sub);
+}
+
+/* -------------------------
+    SECTION STYLING
+-------------------------- */
+
+section {
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+/* -------------------------
+    PROJECT CARDS
+-------------------------- */
+
+.project-card {
+  background: #fff;
+  padding: 32px;
+  margin-bottom: 30px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  transition: 0.25s ease;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.project-card p {
+  color: var(--text-sub);
+  font-size: 1rem;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 55px rgba(0, 0, 0, 0.12);
+}
+
+/* -------------------------
+    FOOTER
+-------------------------- */
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 15px;
+  color: var(--text-sub);
+  }
